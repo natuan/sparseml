@@ -283,6 +283,7 @@ class ScheduledModifierManager(BaseManager, Modifier):
         """
         recipe_variables = parse_recipe_variables(recipe_variables)
         yaml_str = load_recipe_yaml_str(file_path, **recipe_variables)
+        import pdb; pdb.set_trace()
         modifiers = Modifier.load_list(yaml_str)
         if add_modifiers:
             modifiers.extend(add_modifiers)
