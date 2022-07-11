@@ -33,6 +33,8 @@ MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-lar
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/obert-base/pytorch-huggingface/sst2/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/mnli/pruned90_quant-none
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/mnli/pruned90_quant-none
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none
 
 # Step 0: exporting model to onnx
 ONNX_FILE=${MODEL_DIR}/model.onnx

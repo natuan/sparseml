@@ -33,7 +33,6 @@ MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert-
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert-base/pytorch-huggingface/conll2003/pruned80_quant-none-vnni
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/qqp/pruned90_quant-none
-MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/obert-base/pytorch-huggingface/sst2/base-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/obert-base/pytorch-huggingface/sst2/pruned90_quant-none
@@ -41,6 +40,17 @@ MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-b
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/mnli/pruned90_quant-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/obert-medium/pytorch-huggingface/wikipedia_bookcorpus/base-none
 MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/obert-small/pytorch-huggingface/wikipedia_bookcorpus/base-none
+
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none
+
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/mnli/pruned90-none
+
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/qqp/pruned90-none
+
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/base-none
+
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/pruned90-none
+MODEL_DIR=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none
 
 CMD=${CMD}
 

@@ -8,6 +8,7 @@ M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pyt
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert-base/pytorch-huggingface/conll2003/base-none
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert-base/pytorch-huggingface/conll2003/pruned90_quant-none
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert-base/pytorch-huggingface/conll2003/pruned80_quant-none-vnni
+M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none
 
 CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/natuan/sparseml/src/sparseml/transformers/export.py \
     --model_path $M \
