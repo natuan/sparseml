@@ -7,14 +7,20 @@ MODEL_NAME=SQuAD@bert-large-uncased-sparse-80-1x4-block-pruneofa@sparse_transfer
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/pruned90_quant-none
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none
 
-M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned80_quant-none-vnni/framework
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none/framework
+M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned80_quant-none-vnni/framework02
 
 CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \
   --model_path $M \
   --task qa \
-  --sequence_length 384 \
   --onnx_file_name model.onnx
+
+# CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \
+#   --model_path $M \
+#   --task qa \
+#   --sequence_length 384 \
+#   --onnx_file_name model.onnx
+
 
 # CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \
 #   --model_path $M \

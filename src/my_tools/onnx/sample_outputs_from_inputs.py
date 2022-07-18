@@ -6,10 +6,11 @@ import numpy as np
 src_sample_inputs_dir = "/hdd/models/intel/bert_large/QQP@bert-large-uncased-sparse-80-1x4-block-pruneofa@sparse_transfer_quant_glue_6@BS32@EP6@HARD1.0@LR1e-4@ID29298/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/bert-base/pytorch-huggingface/wikipedia_bookcorpus/12layer_pruned90-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-base/pytorch-huggingface/qqp/base-none/sample-inputs"
-src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-base/pytorch-huggingface/qqp/base-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/base-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-base/pytorch-huggingface/conll2003/base-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-base/pytorch-huggingface/squad/12layer_pruned90-none/sample-inputs"
+src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-base/pytorch-huggingface/qqp/base-none/sample-inputs"
+src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/base-none/sample-inputs"
 
 assert os.path.exists(src_sample_inputs_dir)
 
@@ -42,15 +43,14 @@ model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/obert
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/pruned90_quant-none"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/qqp/pruned90_quant-none"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none"
-model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none"
-model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/obert-base/pytorch-huggingface/sst2/pruned90_quant-none"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/mnli/pruned90_quant-none"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/mnli/pruned90_quant-none"
-model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none"
-
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/obert-base/pytorch-huggingface/squad/base-none"
-
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/mnli/pruned80_quant-none-vnni"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/pruned80_quant-none-vnni"
 
 # Folder to write inputs/outputs in npz
 sample_inputs_dir = os.path.join(model_dir, "sample-inputs")
@@ -79,7 +79,7 @@ input_name_map = {
     "attention_mask": "input_1",
     "token_type_ids": "input_2"
 }
-#input_name_map = None
+input_name_map = None
 
 input_file_names = sorted([f for f in os.listdir(src_sample_inputs_dir) if f.endswith(".npz")])
 for idx, f in enumerate(input_file_names):

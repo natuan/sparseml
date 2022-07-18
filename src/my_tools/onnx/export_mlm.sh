@@ -19,6 +19,7 @@ M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/obert-base
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/obert-base/pytorch-huggingface/wikipedia_bookcorpus/12layer_pruned90-none
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/obert-base/pytorch-huggingface/wikipedia_bookcorpus/12layer_pruned80-none-vnni
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/bert-large/pytorch-huggingface/wikipedia_bookcorpus/base-none
+M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/bert-large/pytorch-huggingface/wikipedia_bookcorpus/pruned90-none
 
 CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/natuan/sparseml/src/sparseml/transformers/export.py \
     --model_path $M \
