@@ -10,16 +10,15 @@ M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytor
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none/framework
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned80_quant-none-vnni/framework02
 
+M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-large/pytorch-huggingface/squad/pruned90_quant-none.v2
+
+M=/hdd/misc
+
 CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \
   --model_path $M \
   --task qa \
+  --sequence_length 384 \
   --onnx_file_name model.onnx
-
-# CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \
-#   --model_path $M \
-#   --task qa \
-#   --sequence_length 384 \
-#   --onnx_file_name model.onnx
 
 
 # CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/neuralmagic/sparseml/src/sparseml/transformers/export.py \

@@ -10,7 +10,9 @@ src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classif
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-base/pytorch-huggingface/conll2003/base-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-base/pytorch-huggingface/squad/12layer_pruned90-none/sample-inputs"
 src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-base/pytorch-huggingface/qqp/base-none/sample-inputs"
-src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/base-none/sample-inputs"
+src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/bert-large/pytorch-huggingface/wikipedia_bookcorpus/base-none/sample-inputs"
+
+src_sample_inputs_dir = "/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/imdb/base-none/sample-inputs"
 
 assert os.path.exists(src_sample_inputs_dir)
 
@@ -50,7 +52,13 @@ model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-question_answering/bert-la
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/mnli/pruned80_quant-none-vnni"
 model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-token_classification/bert-large/pytorch-huggingface/conll2003/pruned90_quant-none"
-model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/pruned80_quant-none-vnni"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-masked_language_modeling/bert-large/pytorch-huggingface/wikipedia_bookcorpus/pruned90-none"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/pruned90_quant-none"
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/obert-base/pytorch-huggingface/imdb/base-none"
+
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-document_classification/obert-base/pytorch-huggingface/imdb/base-none_ID23809"
+
+model_dir="/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-document_classification/obert-base/pytorch-huggingface/imdb/pruned90_quant-none"
 
 # Folder to write inputs/outputs in npz
 sample_inputs_dir = os.path.join(model_dir, "sample-inputs")

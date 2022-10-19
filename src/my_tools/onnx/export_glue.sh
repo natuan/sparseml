@@ -39,6 +39,7 @@ M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pyto
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/qqp/pruned90_quant-none/framework
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-text_classification/bert-large/pytorch-huggingface/mnli/pruned80_quant-none-vnni/framework
 M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/pruned80_quant-none-vnni/framework
+M=/hdd/src/neuralmagic/zoomodels/src/dvc/nlp-sentiment_analysis/bert-large/pytorch-huggingface/sst2/pruned90_quant-none
 
 
 CUDA_VISIBLE_DEVICES=$GPU python /hdd/src/natuan/sparseml/src/sparseml/transformers/export.py \
